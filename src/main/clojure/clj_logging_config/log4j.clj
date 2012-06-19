@@ -23,7 +23,8 @@
            (org.apache.log4j.spi
             RepositorySelector DefaultRepositorySelector RootLogger LoggingEvent)
            (java.io OutputStream Writer File)
-           ))
+           )
+  (:gen-class ))
 
 (defn ^Logger get-config-logger []
   (Logger/getLogger (name (ns-name 'clj-logging-config.log4j))))
