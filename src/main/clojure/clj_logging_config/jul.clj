@@ -16,7 +16,8 @@
   (:import (java.util.logging
             Logger Level LogManager Handler LogRecord
             Formatter SimpleFormatter ConsoleHandler FileHandler StreamHandler)
-           (java.io OutputStream)))
+           (java.io OutputStream))
+  (:gen-class ))
 
 (set! *warn-on-reflection* true)
 
